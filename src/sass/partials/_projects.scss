@@ -1,0 +1,31 @@
+.card {
+  background-color: rgb(46, 46, 46);
+  max-width: 1000px;
+  border: solid 1px rgb(107, 107, 107);
+}
+
+.card-text {
+}
+
+.project-image {
+  height: 300px;
+  width: 300px;
+  object-fit: cover;
+  border-radius: 3% 0 0 3%;
+}
+
+.button {
+  width: 100%;
+}
+
+.flex-col {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.buttons {
+  padding-bottom: 15px;
+  padding-right: 5px;
+  width: 90px;
+}
