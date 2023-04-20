@@ -33,13 +33,13 @@ function Projects() {
             </div>
           </div>
           <div className="d-flex flex-row flex-md-column gap-2 buttons justify-content-md-end">
-          {post?.sitelink && (<Button className="site" href={post.sitelink}>
+          {post?.sitelink && (<Button className="cta site" href={post.sitelink}>
               Site
             </Button>)}
-            {post?.gitlink && (<Button className="github" href={post.gitlink}>
+            {post?.gitlink && (<Button className="cta git" href={post.gitlink}>
               Github
             </Button>)}
-            {post?.discord && (<Button className="discord" href={post.discord}>
+            {post?.discord && (<Button className="cta dis" href={post.discord}>
               Discord
             </Button>)}
           </div>

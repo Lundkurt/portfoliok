@@ -15,7 +15,7 @@ function Home() {
 
       <p>Please take a look at some examples of my work and projects on this portfolio, and feel free to contact me if you have any questions or would like to work together. Thank you for your interest!</p>
 
-    <Button className='cta-git' href='https://github.com/Lundkurt'>My Github</Button>
+    <Button className='git cta-git-home' href='https://github.com/Lundkurt'>My Github</Button>
 
     </div>
     <div className='flex-1 d-flex justify-content-center align-items-center'>
