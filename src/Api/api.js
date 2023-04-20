@@ -16,11 +16,10 @@ export const project = [
     src: "images/jsframework.png",
     description:
       "This project is a Next.js application showcasing a list of games, each linking to their details page showcasing title, image and rating. little focus on design, just kept it very simple",
-    gitlink: "",
-    sitelink:
-      "https://github.com/Noroff-FEU-Assignments/js-frameworks-course-assignment-Lundkurt",
+    gitlink: "https://github.com/Lundkurt/JS-framework-CA",
+    sitelink: "",
     discord: "",
-    tech: ["Next.js", "CSS", "JS", "Strapi", "Yup", "Axios"],
+    tech: ["Next.js", "Strapi", "Yup", "Axios"],
   },
   {
     id: 2,

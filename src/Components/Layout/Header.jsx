@@ -3,7 +3,7 @@ import { Nav } from "react-bootstrap";
 
 function Header() {
   return (
-    <header>
+    <header className="d-flex justify-content-center align-items-center">
       <Nav className="justify-content-center" activeKey="/">
         <Nav.Item>
           <Nav.Link href="/">Home</Nav.Link>

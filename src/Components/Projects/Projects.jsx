@@ -1,18 +1,25 @@
-import React from 'react'
+import React, {useState} from 'react'
 import { Button, Card, Container } from 'react-bootstrap'
 import {project} from "../../Api/api"
+import ImageModal from '../Common/Modal';
 
 console.log(project);
 
 function Projects() {
+  const [selectedImage, setSelectedImage] = useState('');
+
+  const handleImageClick = (src) => {
+    setSelectedImage(src);
+  };
+
   return (
-    <div>
+    <div className='projects'>
       <h1>My projects</h1>
-      <Container className="d-flex flex-col gap-2">
+      <Container className="d-flex flex-column gap-2 justify-content-center">
       {project.map((post) => {
         return (
-        <Card key={post.title} className='d-flex flex-row gap-2'>
-          <Card.Img className="project-image" variant="left" src={post.src}/>
+        <Card key={post.title} className='d-flex flex-column flex-md-row gap-2'>
+          <Card.Img className="project-image" variant="left" src={post.src} onClick={() => handleImageClick(post.src)}/>
           <div>
             <Card.Title className="project-title">{post.title}</Card.Title>
             <Card.Text>{post.description}</Card.Text>
@@ -25,21 +32,21 @@ function Projects() {
               </ul>
             </div>
           </div>
-          <div className="d-flex flex-col justify-content-end buttons">
-          {post?.sitelink && (<Button href={post.sitelink}>
+          <div className="d-flex flex-row flex-md-column gap-2 buttons justify-content-md-end">
+          {post?.sitelink && (<Button className="site" href={post.sitelink}>
               Site
             </Button>)}
-            {post?.gitlink && (<Button href={post.gitlink}>
+            {post?.gitlink && (<Button className="github" href={post.gitlink}>
               Github
             </Button>)}
-            {post?.discord && (<Button href={post.discord}>
+            {post?.discord && (<Button className="discord" href={post.discord}>
               Discord
             </Button>)}
           </div>
           
         </Card>);
       })}
-      
+       <ImageModal show={!!selectedImage} onHide={() => setSelectedImage('')} src={selectedImage} />
       </Container>
     </div>
   )
