@@ -52,6 +52,13 @@ export const project = [
     gitlink: "",
     sitelink: "",
     discord: "https://discord.gg/tjjXJXDrtZ",
-    tech: [],
+    tech: [
+      "java",
+      "HTML",
+      "CSS",
+      "Spring Boot",
+      "Spring Web",
+      "Spring Security",
+    ],
   },
 ];
