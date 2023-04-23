@@ -1,7 +1,7 @@
-.projects {
-  margin: auto;
-  max-width: 90%;
+.project-container {
+  max-width: 1000px;
 }
+
 .card {
   background-color: rgb(46, 46, 46);
   max-width: 1000px;
@@ -15,8 +15,9 @@
 }
 
 .project-image {
-  height: 300px;
-  width: 300px;
+  max-height: 300px;
+  width: 100%;
+  max-width: 300px;
   object-fit: cover;
   border-radius: 3% 3% 0 0%;
   margin: auto;

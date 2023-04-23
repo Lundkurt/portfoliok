@@ -7,7 +7,7 @@ function Layout({children}) {
     <>
       <Header/>
       <div className='wrapper'>
-       <div className='width-80 automargin'>{children}</div> 
+       <div className='automargin'>{children}</div> 
       </div>
       <Footer/>
     </>

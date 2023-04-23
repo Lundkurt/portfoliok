@@ -6,7 +6,7 @@ export const project = [
     description:
       "This social media platform is a fully functional web application built using React and Noroff Social API. It allows users to create accounts, make posts, edit their posts, and interact with other users on the platform through comments and follows. you can sign up with any fake email ending in @stud.noroff.no",
     gitlink: "https://github.com/Lundkurt/project-exam-2",
-    sitelink: "https://neon-mousse-d792c7.netlify.app/home",
+    sitelink: "https://neon-mousse-d792c7.netlify.app/",
     discord: "",
     tech: ["React", "bootstrap", "sass", "axios", "yup"],
   },

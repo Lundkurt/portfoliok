@@ -13,13 +13,15 @@ function Projects() {
   };
 
   return (
-    <div className='projects'>
-      <h1>My projects</h1>
-      <Container className="d-flex flex-column gap-2 justify-content-center">
+    <div className='d-flex flex-row justify-content-center'>
+      
+      <Container className="d-flex flex-column gap-2 justify-content-center project-container">
+        <h1>My projects</h1>
       {project.map((post) => {
         return (
         <Card key={post.title} className='d-flex flex-column flex-md-row gap-2'>
           <Card.Img className="project-image" variant="left" src={post.src} onClick={() => handleImageClick(post.src)}/>
+          <Card.Body>
           <div>
             <Card.Title className="project-title">{post.title}</Card.Title>
             <Card.Text>{post.description}</Card.Text>
@@ -32,7 +34,9 @@ function Projects() {
               </ul>
             </div>
           </div>
-          <div className="d-flex flex-row flex-md-column gap-2 buttons justify-content-md-end">
+          </Card.Body>
+          <Card.Footer>
+          <div className="d-flex flex-row flex-md-column gap-2 buttons justify-content-start justify-content-md-end">
           {post?.sitelink && (<Button className="cta site" href={post.sitelink}>
               Site
             </Button>)}
@@ -43,7 +47,7 @@ function Projects() {
               Discord
             </Button>)}
           </div>
-          
+          </Card.Footer>
         </Card>);
       })}
        <ImageModal show={!!selectedImage} onHide={() => setSelectedImage('')} src={selectedImage} />
