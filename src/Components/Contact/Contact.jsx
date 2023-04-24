@@ -4,7 +4,7 @@ import { Button } from 'react-bootstrap'
 function Contact() {
   return (
     <>
-      <div>
+      <div className='home-content'>
         <h1>Contact information</h1>
 
         <h4>Phone: +47 480 40 772</h4>

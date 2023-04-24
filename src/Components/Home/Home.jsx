@@ -4,8 +4,8 @@ import { Button } from 'react-bootstrap'
 function Home() {
   return (
     <>
-    <div className='d-flex flex-column flex-md-row justify-content-center'>
-    <div className='home-content flex-1'>
+    <div className='d-flex flex-column flex-md-row justify-content-center home-content'>
+    <div className=' flex-1'>
       <h1>Hi there!</h1>
       <p>Welcome to my portfolio! My name is Kurt André Lund, and I'm a 27-year-old programmer based in Sandnes, Norway. My journey into the world of programming began when I decided to take the Noroff Front-end Developer course. Since then, I've developed a strong passion for coding and have expanded my skillset to include back-end development, with a focus on Java.</p>
 
